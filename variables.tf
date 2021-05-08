@@ -1,7 +1,7 @@
 variable "cluster_name" {
   description = "Variable to provide your desired name for the cluster. The script will create a random name if this is empty"
   type        = string
-  default     = "gitops-rnd-kluster"
+  default     = "gitops-rnd-kluster001"
 }
 variable "location" {
   type        = string
@@ -42,7 +42,7 @@ variable "node_size" {
 }
 variable "dns_prefix" {
   type        = string
-  default     = "gitops-rnd-dns"
+  default     = "gitops-rnd-dns001"
   description = "DNS prefix for the cluster. The script will create a random name if this is empty"
 }
 variable "cluster_version" {
