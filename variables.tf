@@ -37,7 +37,7 @@ variable "node_count" {
 }
 variable "node_size" {
   type        = string
-  default     = "Standard_B2s"
+  default     = "Standard_B2ms"
   description = "The size of the worker node to use for the cluster"
 }
 variable "dns_prefix" {
