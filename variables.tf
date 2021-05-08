@@ -1,11 +1,11 @@
 variable "cluster_name" {
   description = "Variable to provide your desired name for the cluster. The script will create a random name if this is empty"
   type        = string
-  default     = "learn gitops"
+  default     = "gitops-rnd-kluster"
 }
 variable "location" {
   type        = string
-  default     = "centralindia"
+  default     = "southeastasia"
   description = "The Azure region in to which to provision the cluster"
 }
 
@@ -42,7 +42,7 @@ variable "node_size" {
 }
 variable "dns_prefix" {
   type        = string
-  default     = "learngitops"
+  default     = "gitops-rnd-dns"
   description = "DNS prefix for the cluster. The script will create a random name if this is empty"
 }
 variable "cluster_version" {
