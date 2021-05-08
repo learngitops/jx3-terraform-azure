@@ -5,7 +5,7 @@ variable "cluster_name" {
 }
 variable "location" {
   type        = string
-  default     = "australiaeast"
+  default     = "japaneast"
   description = "The Azure region in to which to provision the cluster"
 }
 
@@ -37,17 +37,17 @@ variable "node_count" {
 }
 variable "node_size" {
   type        = string
-  default     = "Standard_B2ms"
+  default     = "Standard_B2s"
   description = "The size of the worker node to use for the cluster"
 }
 variable "dns_prefix" {
   type        = string
-  default     = ""
+  default     = "learngitops"
   description = "DNS prefix for the cluster. The script will create a random name if this is empty"
 }
 variable "cluster_version" {
   type        = string
-  default     = "1.18.10"
+  default     = "1.19.9"
   description = "Kubernetes version to use for the AKS cluster"
 }
 variable "network_resource_group_name" {
